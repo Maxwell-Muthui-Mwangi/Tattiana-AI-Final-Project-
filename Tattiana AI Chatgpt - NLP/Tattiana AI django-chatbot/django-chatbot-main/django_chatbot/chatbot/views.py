@@ -17,7 +17,8 @@ from transformers import pipeline
 # openai.api_key = openai_api_key
 
 # Initialize the Hugging Face pipeline
-generator = pipeline('text-generation', model='C:/Users/user/gpt-neo-2.7B') 
+model_path = 'EleutherAI/gpt-j-6B'
+generator = pipeline('text-generation', model=model_path) 
 
 # def ask_openai(message):
 #     #here is the ai part
@@ -59,7 +60,7 @@ generator = pipeline('text-generation', model='C:/Users/user/gpt-neo-2.7B')
 def ask_huggingface(message):
     # Generate a response using Hugging Face's model
     # response = generator(message, max_length=10, do_sample=True, num_return_sequences=1, temperature=0.9)
-    response = generator(message, max_length=10, do_sample=True, num_return_sequences=1, temperature=0.9)
+    response = generator(message, max_length=10, do_sample=True,  temperature=0.9)
     # Extract the generated text
     answer = response[0]['generated_text']
     return answer
