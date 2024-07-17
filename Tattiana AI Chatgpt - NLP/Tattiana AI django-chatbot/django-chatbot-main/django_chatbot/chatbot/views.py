@@ -18,6 +18,10 @@ from transformers import pipeline
 
 # Initialize the Hugging Face pipeline
 model_path = 'EleutherAI/gpt-j-6B'
+model_path2 = 'EleutherAI/gpt-neox-20b'
+model_path3 = 'EleutherAI/gpt-neo-12b'
+model_path4 = 'gpt2'
+model_path5='MetaAI/llama-30b'
 generator = pipeline('text-generation', model=model_path) 
 
 # def ask_openai(message):
