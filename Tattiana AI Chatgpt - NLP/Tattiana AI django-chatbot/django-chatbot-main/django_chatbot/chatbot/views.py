@@ -13,7 +13,7 @@ from transformers import pipeline
 
 
 
-# openai_api_key = 'sk-proj-XF7U4GdRDPhfS7ymHXM0T3BlbkFJ1JuFiaafNhUMNFEcmHds'
+# openai_api_key = ''
 # openai.api_key = openai_api_key
 
 # Initialize the Hugging Face pipeline
