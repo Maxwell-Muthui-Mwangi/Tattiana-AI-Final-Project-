@@ -28,6 +28,8 @@ class CalculatorApp(tk.Tk):
         self.num1_entry = tk.Entry(self, width=20)
         self.num1_entry.pack(pady=10)
 
+
+
         self.num2_entry = tk.Entry(self, width=20)
         self.num2_entry.pack(pady=10)
 

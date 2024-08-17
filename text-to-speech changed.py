@@ -16,12 +16,11 @@ class DocumentReaderApp(tk.Tk):
 
         # Initialize pyttsx3 engine
         self.engine = pyttsx3.init()
-        self.engine.setProperty('rate', 150)  # Default speed of speech
+        self.engine.setProperty('rate', 420)  # Default speed of speech
         self.engine.setProperty('volume', 1)  # Default volume (0.0 to 1.0)
 
         self.create_widgets()
-
-    def create_widgets(self):
+   
         self.label = tk.Label(self, text="Document Reader", font=("Helvetica", 16))
         self.label.pack(pady=20)
 
@@ -53,7 +52,7 @@ class DocumentReaderApp(tk.Tk):
         self.speed_label = tk.Label(self, text="Speed (words per minute):")
         self.speed_label.pack(pady=5)
         self.speed_entry = tk.Entry(self)
-        self.speed_entry.insert(tk.END, "150")
+        self.speed_entry.insert(tk.END, "420")
         self.speed_entry.pack()
 
         self.speed_button = tk.Button(self, text="Apply Speed", command=self.apply_speed)

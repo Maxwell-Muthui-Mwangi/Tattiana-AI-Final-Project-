@@ -22,7 +22,7 @@ model_path2 = 'EleutherAI/gpt-neox-20b'
 model_path3 = 'EleutherAI/gpt-neo-12b'
 model_path4 = 'gpt2'
 model_path5='MetaAI/llama-30b' ##not public
-generator = pipeline('text-generation', model=model_path2) 
+generator = pipeline('text-generation', model=model_path3) 
 
 # def ask_openai(message):
 #     #here is the ai part
@@ -59,7 +59,7 @@ generator = pipeline('text-generation', model=model_path2)
     
 
     
-#     return render(request, 'chatbot.html', {'chats': chats})
+-#     return render(request, 'chatbot.html', {'chats': chats})
 
 def ask_huggingface(message):
     # Generate a response using Hugging Face's model
